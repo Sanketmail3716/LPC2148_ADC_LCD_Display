@@ -1,0 +1,10 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\two_adc_pote.o"
+".\objects\adc.o"
+".\objects\lcd_4bit.o"
+".\objects\pll.o"
+--strict --scatter ".\Objects\Two_ADC_pote.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Two_ADC_pote.map" -o .\Objects\Two_ADC_pote.axf
